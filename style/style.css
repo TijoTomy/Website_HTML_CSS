@@ -102,7 +102,7 @@ header .container{
     position: relative;
  }
  .input-section input{
-    width: 250px;
+    max-width: 250px;
     padding: 7px;
     border: none;
     outline: none;
@@ -191,3 +191,50 @@ header .container{
 
  }
  /*footer section end*/
+/* Media queries start*/ 
+@media (max-width: 750px){
+    /*header section start*/
+    header .container{
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+    header a{
+        margin-right: 20px;
+        margin-bottom: 15px;
+    }
+    /*header section end*/
+    /*banner section start */
+
+    .banner-section .main-container{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+     }
+     .left-section{
+        width: 100%;
+        padding: 10px;
+     }
+     .right-section{
+        width: 100%;
+        margin: 0px;
+     }
+     /*banner section end */
+     /*photo section start*/
+     .photos-section{
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     }
+     .card-container{
+        height: 320px;
+        width: 80%;
+        margin-bottom: 10px;
+     }
+     /*photo section end*/
+    
+}
+/* Media queries end*/ 
